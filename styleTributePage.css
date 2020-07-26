@@ -1,0 +1,123 @@
+header, nav, main, section, article, aside, footer{
+	display: block;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	font-size:15px;
+	font-family: 'Poppins', sans-serif;
+    
+    background: rgb(107,186,222);
+    background: -moz-linear-gradient(90deg, rgba(107,186,222,1) 0%, rgba(232,156,205,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(107,186,222,1) 0%, rgba(232,156,205,1) 100%);
+    background: linear-gradient(90deg, rgba(107,186,222,1) 0%, rgba(232,156,205,1) 100%);
+}
+
+
+nav{
+	background: rgb(252,129,70);
+	background: linear-gradient(90deg, rgba(252,129,70,1) 0%, rgba(148,162,232,1) 65%);
+		/*
+		fc8146 blue		94a2e8 orange
+		*/
+	padding: 5px;
+	margin-top: 1px;
+	text-align: center;
+}
+
+
+
+main {
+	width: 1035px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+section { 
+	background: rgb(237,233,5);
+
+	background: -moz-linear-gradient(320deg, rgba(111,137,219,1) 0%, rgba(237,233,5,1) 100%);
+    background: -webkit-linear-gradient(320deg, rgba(111,137,219,1) 0%, rgba(237,233,5,1) 100%);
+    background: linear-gradient(320deg, rgba(111,137,219,1) 0%, rgba(237,233,5,1) 100%);
+
+	margin-top: 10px;
+	padding: 5px 15px;
+	float:auto;
+}
+
+article { 
+	background-color: #c71585;
+	margin-top: 5px;
+	padding: 10px 15px;
+}
+
+#msgButton{
+	display: block;
+	padding: 10px;
+	font-size:20px;
+	background-color: lightblue;
+}
+
+#clickButton{ /*make it look like a button*/
+	display: block;
+	padding: 10px;
+	font-size:20px;
+	background-color: lightgreen;
+}
+
+#resetButton { 
+	display: block;
+	padding: 10px;
+	font-size:20px;
+	background-color: pink;
+}
+
+#inputItemList {
+	display: inline-block;
+	padding: 5px;
+	font-size:20px;
+	background-color: lightpink;
+}
+
+#addItemButton {
+	display: inline-block;
+	padding: 10px;
+	font-size:20px;
+	background-color: lightblue;
+}
+
+#resetItemButton {
+	display: inline-block;
+	padding: 10px;
+	font-size:20px;
+	background-color: lightgreen;
+}
+
+#removeItemButton {
+	display: inline-block;
+	padding: 10px;
+	font-size:20px;
+	background-color: lightgreen;
+}
+
+
+
+aside {
+	display:block;
+	background-color: #ff0500;
+	width: 475px;
+	float: right;
+	padding: 20px;
+	margin-top: 10px;
+}
+
+footer {
+	clear: both;
+	background-color: #ff4500; /*dark blue*/
+	color: white;
+	padding: 5px 20px;
+}
