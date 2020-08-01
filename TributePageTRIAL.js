@@ -1,9 +1,26 @@
+function sayHello() {
+	alert("hey there");
+	document.getElementById("msgButton").innerHTML = "You clicked the message button!";
+}
+
+function button() {
+	document.getElementById("clickButton").innerHTML = "You clicked the click me button!";
+}
+
+function reset() {
+	document.getElementById("msgButton").innerHTML = "Get Message!";
+ 	document.getElementById("clickButton").innerHTML = "Click Me!";
+}
+
+//-----------------------------------------------------------------
+
 //don't pass parameters
-//only put parts inthe function that matter
+//only put parts in the function that matter
 
 //Adds the item to the item list
 function addItem() {
   var inputItemList = document.getElementById("inputItemList");
+
   if (
     inputItemList &&
     inputItemList.value &&
@@ -24,10 +41,10 @@ function addItem() {
   {
     document.getElementById("errorbox").innerText = "button works";
   }
+  document.getElementById("myForm").reset();
 }
 
 
-//FOCUS ON THIS!!!
 //EventListener of the Enter Key
 document.addEventListener("DOMContentLoaded", function(event) {  //the DOM is loaded
     var inputItemList = document.getElementById("inputItemList");
@@ -67,8 +84,6 @@ function removeItem() {
 function btnReset(){
     document.getElementById("inputItemList").value="";
 }
-
-
 
 
 
