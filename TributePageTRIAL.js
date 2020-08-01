@@ -8,7 +8,8 @@ function addItem() {
     inputItemList &&
     inputItemList.value &&
     inputItemList.value.trim().length > 0
-  ) {
+    ) 
+  {
     document.getElementById("errorbox").innerText = "";
     
     var ul = document.getElementById("variableList");
@@ -19,30 +20,35 @@ function addItem() {
     li.appendChild(document.createTextNode(inputItemList.value));
     ul.appendChild(li);
   } 
-  else {
-    document.getElementById("errorbox").innerText = "text field is empty";
+  else 
+  {
+    document.getElementById("errorbox").innerText = "button works";
   }
 }
 
+
+//FOCUS ON THIS!!!
 //EventListener of the Enter Key
-var inputItemList = document.getElementById("inputItemList");
-   inputItemList.addEventListener("keypress", function(event) {
-    console.log("testing items:", items);
-            document.getElementById("errorbox").innerText = "";
-        if (event.keyCode === 13) {
-            event.preventDefault();
+document.addEventListener("DOMContentLoaded", function(event) {  //the DOM is loaded
+    var inputItemList = document.getElementById("inputItemList");
+    inputItemList.addEventListener("keypress", function(event) {  //and then you put the event into the input (attaching the evnt to the input)
+        document.getElementById("errorbox").innerText = "";
+        if (event.keyCode === 13) {  //everytime you press enter when the cursor is focused  in the input, this code is going to run
+            event.preventDefault(); 
             if (
                 event.currentTarget.value && 
-                event.currentTarget.value.length > 0
-            ) {
+                event.currentTarget.value.length > 0) 
+            {
                 addItem();
-            } 
+            }
             else {
-              document.getElementById("errorbox").innerText = "text field is empty";
+                document.getElementById("errorbox").innerText = "text field is empty";
             }
             return false;
-        }
+        } 
     });
+});
+
 
 //Removes the item from the item list
 function removeItem() {
