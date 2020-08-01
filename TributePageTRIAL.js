@@ -17,10 +17,9 @@ function reset() {
 //don't pass parameters
 //only put parts in the function that matter
 
-//Adds the item to the item list
+//Adds the item to the item list when clicking the button
 function addItem() {
   var inputItemList = document.getElementById("inputItemList");
-
   if (
     inputItemList &&
     inputItemList.value &&
@@ -42,6 +41,7 @@ function addItem() {
     document.getElementById("errorbox").innerText = "button works";
   }
   document.getElementById("myForm").reset();
+  inputItemList.focus();
 }
 
 
